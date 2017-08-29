@@ -1,6 +1,5 @@
 # Command Pattern
-* **Purpose** - description
-* **Objective** - description
+* **Purpose** - to demonstrate the [command pattern](https://en.wikipedia.org/wiki/Command_pattern)
 
 ## Part 1 - Design Command Interface
 
