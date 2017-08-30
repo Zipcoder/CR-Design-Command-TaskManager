@@ -133,7 +133,7 @@
 	* The method should assign field `taskManager` to a new `TaskManager` object.
 
 ### Part 4.2 - Create class `TestTaskAccountCreate`
-* Create a class `TestTaskAccountCreate` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
+* Create a subclass of `TestTaskAccount` named `TestTaskAccountCreate` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
 * The class should define a `test` method annotated with `@Test` which will:
 	* populate the `taskManager` with `TaskAccountCreate` objects.
 	* ensure accounts have not been added
@@ -141,7 +141,7 @@
 	* ensure accounts have been added.
 
 ### Part 4.3 - Create class `TestTaskAccountDeposit`
-* Create a class `TestTaskAccountDeposit` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
+* Create a subclass of `TestTaskAccount` named `TestTaskAccountDeposit` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
 * The class should define a `test` method annotated with `@Test` which should:
 	* populate the `taskManager` with a `TaskAccountCreate`.
 	* perform tasks pending in the `taskManager`.
@@ -153,7 +153,7 @@
 	* assert ending balance is the sum of starting balance and deposit amount.
 
 ### Part 4.4 - Create class `TestTaskAccountWithdrawal`
-* Create a class `TestTaskAccountWithdrawal` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
+* Create a subclass of `TestTaskAccount` named `TestTaskAccountWithdrawal` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
 * The class should define a `test` method annotated with `@Test` which should:
 	* populate the `taskManager` with a `TaskAccountCreate`.
 	* perform tasks pending in the `taskManager`.
