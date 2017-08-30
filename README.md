@@ -180,3 +180,20 @@ RunWith(Suite.class)
 ```
 
 * Run the class as a `junit` test, and ensure all scenarios pass.
+
+
+
+## Part 5
+
+### Part 5.1 - Create class `BankAccountFactory`
+* Create a class `BankAccountFactory` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage.
+* The class should define a `createAccount` which makes use of a `TaskManager` to create new `BankAccount` objects.
+
+
+### Part 5.2 - Create class `BankTeller`
+* A bank teller takes an argument of a `Queue` of `Person` objects.
+* Each person should have some actionable request regarding a respective `BankAccount`.
+
+### Part 5.3 - Create class `Bank` (Mediator Pattern)
+* Create class `Bank` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage.
+* The class should be a _mediator_ for `Queue<Person>` and `BankTeller`.
