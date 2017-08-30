@@ -56,7 +56,7 @@
 
 ### Part 2.2 - Create singleton `BankAccountManager`
 * Create a class `BankAccountManager` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage using [singleton pattern](https://github.com/Zipcoder/TC-Design-Singleton-ObjectCreator).
-* The class should instantiate a _static_ field `instance` of type `BankAccountManager`.
+* The class should instantiate a _static_ field instance of type `BankAccountManager`.
 * The class should instantiate a field `bankAccounts` of type `ArrayList` of parameterized type `BankAccount`.
 * The class should define a private, empty, nullary constructor.
 * The class should define a method `findBankAccount` which uses a `long` parameter to identify and return a `BankAccount` object with a respective `id`.
