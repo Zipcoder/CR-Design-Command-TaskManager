@@ -55,7 +55,9 @@
 * * The class should define a an `decreaseBalance` method which takes an argument of `double` and decrease the `balance` field by the respective amount.
 
 ### Part 2.2 - Create singleton `BankAccountManager`
-* Create a class `BankAccountManager` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage using [singleton pattern](https://github.com/Zipcoder/TC-Design-Singleton-ObjectCreator).
+* Create a class `BankAccountManager` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage.
+	* Ensure the `BankAccountManager` is designed as a singleton.
+	* Use the [singleton design pattern lab](https://github.com/Zipcoder/TC-Design-Singleton-ObjectCreator) as an example.
 * The class should instantiate a _static_ field of type `BankAccountManager`.
 * The class should instantiate a field `bankAccounts` of type `ArrayList` of parameterized type `BankAccount`.
 * The class should define a private, empty, nullary constructor.
