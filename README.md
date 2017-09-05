@@ -45,7 +45,7 @@
 
 
 ## Part 2 - Design `BankAccount` Interface
-* **Note:** When discussing design patterns, the use of the word _[interface](https://en.wikipedia.org/wiki/Application_programming_interface)_ is more abstract than [conventional java interfaces](https://www.tutorialspoint.com/java/java_interfaces.htm), but more concrete than general [computing interfaces](https://en.wikipedia.org/wiki/Interface_(computing).
+* **Note:** When discussing design patterns, the use of the word _[interface](https://en.wikipedia.org/wiki/Application_programming_interface)_ is more abstract than [conventional java interfaces](https://www.tutorialspoint.com/java/java_interfaces.htm), but more concrete than general [computing interfaces](https://en.wikipedia.org/wiki/Interface_(computing)).
 
 ### Part 2.1 - Create class `BankAccount`
 * Create a class `BankAccount` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage
