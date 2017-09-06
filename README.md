@@ -62,7 +62,7 @@
 * Create a class `BankAccountManager` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage.
 	* Ensure the `BankAccountManager` is designed as a singleton.
 	* Use the [singleton design pattern lab](https://github.com/Zipcoder/TC-Design-Singleton-ObjectCreator) as an example.
-* The class should instantiate a _static_ field of type `BankAccountManager`.
+* The class should assign a _static_ field of type `BankAccountManager`.
 * The class should instantiate a field `bankAccounts` of type `ArrayList` of parameterized type `BankAccount`.
 * The class should define a private, empty, nullary constructor.
 * The class should define a method `findBankAccount` which uses a `long` parameter to identify and return a `BankAccount` object with a respective `id`.
@@ -109,7 +109,7 @@
 * The class should define a method `afterUndo` which decreases the respective `account` field by the `dollarAmount` field.
 
 ### Part 3.3 - Create class `TaskAccountRemove`
-* Create a subclass of `Task` named `TaskAccountDeposit` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` subpackage.
+* Create a subclass of `Task` named `TaskAccountRemove` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` subpackage.
 * The class should declare a final `bankAccount` variable of type `BankAccount`.
 * The constructor should have a parameter of `long` which should be used to locate a `BankAccount` with the respective id from the `BankAccountManager` singleton.
 * The class should define a meethod `afterExecute` which removes the `bankAccount` field from the `bankAccounts` list in the `BankAccountManager` singleton.
@@ -141,6 +141,17 @@
 	* ensure accounts have not been added
 	* perform tasks pending in the `taskManager`
 	* ensure accounts have been added.
+	
+### Part 4.2 - Create class `TestTaskAccountRemove`
+* Create a subclass of `TestTaskAccount` named `TestTaskAccountRemove` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
+* The class should define a `test` method annotated with `@Test` which will:
+	* populate the `taskManager` with `TaskAccountCreate` objects.
+	* perform tasks pending in the `taskManager`.
+	* ensure account has been added.
+	* populate the `taskManager` with `TaskAccountRemove` objects.
+	* ensure account has
+	* perform tasks pending in the `taskManager`
+	* ensure accounts have been added.
 
 ### Part 4.3 - Create class `TestTaskAccountDeposit`
 * Create a subclass of `TestTaskAccount` named `TestTaskAccountDeposit` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
@@ -168,16 +179,16 @@
 
 ### Part 4.5 - Create class `TestTaskAccountSuite`
 * Create a class `TestTaskAccountSuite` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
-* The class should be annotated with
+* The class signature should be annotated with
 
 ```java
-RunWith(Suite.class)
+@RunWith(Suite.class)
 
 @Suite.SuiteClasses({
         TestTaskAccountCreate.class,
         TestTaskAccountRemove.class,
         TestTaskAccountDeposit.class,
-        TestTaskAccountWithdrawl.class
+        TestTaskAccountWithdrawal.class
 })
 ```
 
