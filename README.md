@@ -113,7 +113,7 @@
 * The class should declare a final `bankAccount` variable of type `BankAccount`.
 * The constructor should have a parameter of `long` which should be used to locate a `BankAccount` with the respective id from the `BankAccountManager` singleton.
 * The class should define a meethod `afterExecute` which removes the `bankAccount` field from the `bankAccounts` list in the `BankAccountManager` singleton.
-* The class should define a meethod `afterExecute` which adds the `bankAccount` field to the `bankAccounts` list in the `BankAccountManager` singleton.
+* The class should define a meethod `afterUndo` which adds the `bankAccount` field to the `bankAccounts` list in the `BankAccountManager` singleton.
 
 
 ### Part 3.4 - Create class `TaskAccountWithdrawal`
