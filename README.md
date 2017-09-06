@@ -141,17 +141,6 @@
 	* ensure accounts have not been added
 	* perform tasks pending in the `taskManager`
 	* ensure accounts have been added.
-	
-### Part 4.2 - Create class `TestTaskAccountRemove`
-* Create a subclass of `TestTaskAccount` named `TestTaskAccountRemove` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
-* The class should define a `test` method annotated with `@Test` which will:
-	* populate the `taskManager` with `TaskAccountCreate` objects.
-	* perform tasks pending in the `taskManager`.
-	* ensure account has been added.
-	* populate the `taskManager` with `TaskAccountRemove` objects.
-	* ensure account has
-	* perform tasks pending in the `taskManager`
-	* ensure accounts have been added.
 
 ### Part 4.3 - Create class `TestTaskAccountDeposit`
 * Create a subclass of `TestTaskAccount` named `TestTaskAccountDeposit` in the `io.zipcoder.zcw_taskmanager.bankaccount.task` test-subpackage.
