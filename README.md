@@ -67,7 +67,7 @@
 * The class should define a private, empty, nullary constructor.
 * The class should define a method `findBankAccount` which uses a `long` parameter to identify and return a `BankAccount` object with a respective `id`.
 * The class should define a method `addAccount` which uses a `BankAccount` parameter to add a `BankAccount` to the `bankAccounts`
-* The class should define a method `removeAccount` which uses a `BankAccount` to remove a respective `BankAccount` object `bankAccounts
+* The class should define a method `removeAccount` which uses a `BankAccount` to remove a respective `BankAccount` object from the `bankAccounts`
 * The class should overload method `removeAccount` with a `long` parameter to identify and remove a `BankAccount` object with a respective `id`.
 * The class should define a method `getNumberOfAccounts` which returns the `size` of `bankAccounts`.
 * The class should define a _static_ method `getInstance` which returns `instance`.
