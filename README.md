@@ -2,7 +2,7 @@
 * **Purpose** - to demonstrate the [command pattern](https://en.wikipedia.org/wiki/Command_pattern)
 * **Design Description** - Encapsulate a request as an object, thereby letting you parameterize clients with different requests, a queue or log requests, and support undoable operations.
 	* Description Source - _Design Patterns: Gang of Four_
-* **Demo Project** - [Lecture demo presented on 09-06-2017](https://github.com/Zipcoder/TC-LectureDemo-Command)
+* **Demo Project** - [Lecture demo](https://github.com/Zipcoder/TC-LectureDemo-Command) presented on 09-06-2017
 
 ## Part 1 - Design Command Interface
 
