@@ -62,15 +62,12 @@
 * Create a class `BankAccountManager` in the `io.zipcoder.zcw_taskmanager.bankaccount` subpackage.
 	* Ensure the `BankAccountManager` is designed as a singleton.
 	* Use the [singleton design pattern lab](https://github.com/Zipcoder/TC-Design-Singleton-ObjectCreator) as an example.
-* The class should assign a _static_ field of type `BankAccountManager`.
 * The class should instantiate a field `bankAccounts` of type `ArrayList` of parameterized type `BankAccount`.
-* The class should define a private, empty, nullary constructor.
 * The class should define a method `findBankAccount` which uses a `long` parameter to identify and return a `BankAccount` object with a respective `id`.
 * The class should define a method `addAccount` which uses a `BankAccount` parameter to add a `BankAccount` to the `bankAccounts`
 * The class should define a method `removeAccount` which uses a `BankAccount` to remove a respective `BankAccount` object from the `bankAccounts`
 * The class should overload method `removeAccount` with a `long` parameter to identify and remove a `BankAccount` object with a respective `id`.
 * The class should define a method `getNumberOfAccounts` which returns the `size` of `bankAccounts`.
-* The class should define a _static_ method `getInstance` which returns `instance`.
 
 ### Part 2.3 - Modify class `Task`
 * The class should define a `getAccountManager` method which returns the singleton `BankAccountManager`
