@@ -25,13 +25,13 @@
 
 ### Part 1.3 - Create class `TaskManager`
 * Create a class `TaskManager`.
-* The class should instantiate two `LinkedList` objects of _parameterized type_ `Task`.
-	* `taskLinkedList` - represents the tasks we would like to perform
-	* `undoLinkedList` - represents the tasks which have been undone, and have potential to be redone.
-* The class should define a `performTasks` method, which iterates through the `taskLinkedList` and invokes `execute` on each `Task` and removes it from the list.
-* The class should define a `pendTask` method, which takes an argument of a `Task` and adds it to the `taskLinkedList` object.
-* The class should define an `undo` method which removes the top element from the `taskLinkedList` and adds it to the `undoLinkedList`.
-* The class should define a `redo` method which removes the top element from the `undoLinkedList` and adds it to the `taskLinkedList`.
+* The class should instantiate two `Stack` objects of _parameterized type_ `Task`.
+	* `todoStack` - represents the tasks we would like to perform
+	* `undoStack` - represents the tasks which have been undone, and have potential to be redone.
+* The class should define a `performTasks` method, which iterates through the `todoStack` and invokes `execute` on each `Task` and removes it from the list.
+* The class should define a `appendTask` method, which takes an argument of a `Task` and adds it to the `todoStack` object.
+* The class should define an `undo` method which removes the top element from the `todoStack` and adds it to the `undoStack`.
+* The class should define a `redo` method which removes the top element from the `undoStack` and adds it to the `todoStack`.
 
 
 
